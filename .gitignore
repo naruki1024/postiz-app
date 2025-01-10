@@ -83,3 +83,11 @@ aws/**/*.so
 aws/**/*.pyc
 aws/**/__pycache__/
 aws/**/lib-dynload/
+
+# AWS CLI related
+awscliv2.zip
+aws/
+aws-cli/
+.aws/
+**/aws-cli/
+**/aws/dist/
