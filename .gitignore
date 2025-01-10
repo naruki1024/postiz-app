@@ -74,3 +74,12 @@ override.tf.json
 *_override.tf.json
 .terraformrc
 terraform.rc
+
+# AWS CLI build artifacts
+aws/dist/
+aws/*.zip
+aws/*.so
+aws/**/*.so
+aws/**/*.pyc
+aws/**/__pycache__/
+aws/**/lib-dynload/
