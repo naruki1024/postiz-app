@@ -1,3 +1,33 @@
+# Postiz Production Configuration
+
+このリポジトリは、Postizの本番環境設定を管理するためのものです。
+
+## 構成
+
+- `docker-compose.yml`: 本番環境のDocker Compose設定
+- `infrastructure/`: AWS インフラストラクチャの設定
+- `.cursorrules`: 設定変更の安全性ルール
+- `.gitignore`: Git除外設定
+
+## 使用方法
+
+1. EC2サーバーでの初期設定:
+```bash
+git clone git@github.com:naruki1024/postiz-app.git
+cd postiz-app
+docker compose up -d
+```
+
+2. 設定の更新:
+```bash
+git pull
+docker compose up -d
+```
+
+## 設定変更のルール
+
+設定ファイルの変更は `.cursorrules` に定義された安全性ルールに従って行ってください。
+
 <p align="center">
   <a href="https://affiliate.postiz.com">
     <img src="https://github.com/user-attachments/assets/af9f47b3-e20c-402b-bd11-02f39248d738" />
