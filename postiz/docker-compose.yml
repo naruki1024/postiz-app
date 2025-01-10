@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postiz:
+    image: postiz/postiz:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data:/data
+      - ./config:/config
+    environment:
+      - TZ=Asia/Tokyo
+    restart: unless-stopped 
